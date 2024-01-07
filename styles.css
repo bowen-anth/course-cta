@@ -71,6 +71,15 @@ body {
   padding-bottom: 1.5rem;
 }
 
+.card-two-event,
+.card-two-date {
+  font-size: 1.15rem;
+}
+
+.card-two-event {
+  margin-bottom: 0.25rem;
+}
+
 .card-two-bottom {
   background-color: #c4dfd8;
   padding: 1.5rem;
