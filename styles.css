@@ -17,7 +17,7 @@ body {
 .section-container {
   display: grid;
   /* grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 500px; */
+    grid-template-rows: 500px; */
   grid-template-columns: repeat(3, 25%);
   grid-template-rows: repeat(3, 90%);
   min-height: 60dvh;
@@ -32,16 +32,12 @@ body {
   padding-top: 2.5rem;
 }
 
-.section-one,
-.section-two,
-.section-three {
-}
-
 .section-one {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem 0;
+  padding-left: 1rem;
 }
 
 .percent.heading {
@@ -84,9 +80,6 @@ body {
   background-color: #c4dfd8;
   padding: 1.5rem;
   margin-left: -0.75rem;
-}
-
-.subheading {
 }
 
 .autumn,
@@ -157,4 +150,99 @@ ul li:before {
 ul li {
   margin: 0.7rem 0;
   font-size: 1.15rem;
+}
+
+.card-two-event {
+  font-style: italic;
+}
+
+@media (max-width: 1100px) {
+  .section-container {
+    width: 100%;
+    grid-template-columns: repeat(3, 31%);
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .apply-now-button {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  .section-container {
+    width: 100%;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(440px, 1fr));
+  }
+  .section-one,
+  .section-two,
+  .section-three {
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0 1rem;
+    margin: 0;
+    text-align: center;
+    margin-top: -2rem;
+    /* box-shadow: 0 1px 2px rgb(0 0 0 / 0.1); */
+  }
+
+  .heading {
+    margin-bottom: -1rem;
+  }
+
+  .season {
+    line-height: 1.25rem;
+  }
+
+  .card-two-bottom {
+    width: 10rem;
+  }
+
+  .card-two-date {
+    font-size: 1.1rem;
+  }
+
+  .card-two {
+    background-color: gray;
+    display: flex;
+  }
+
+  .heading {
+    margin-top: 1rem;
+  }
+
+  .card-two-bottom {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    align-items: cener;
+    justify-content: center;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .section-one,
+  .section-two {
+    padding-bottom: 0.5rem;
+  }
+
+  .section-three {
+    margin-top: -1rem;
+  }
+
+  .section-container {
+    margin: 0;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+  }
 }
